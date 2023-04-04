@@ -13,6 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Rotta che si collega alla View "home.blade.php"
 Route::get('/', function () {
     return view('home');
+});
+
+// Rotta che si collega alla View "contacts.blade.php"
+Route::get('/contacts', function () {
+    return view('contacts');
+});
+
+// Rotta che si collega alla View "services.blade.php"
+Route::get('/services', function () {
+    return view('services');
 });
